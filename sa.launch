@@ -1,0 +1,10 @@
+<launch>
+
+	<!-- Run the map server -->
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find mcl_sa)/config/mapaf.yaml" output="screen"/>
+
+
+	<!-- run sa project -->
+	<node name="mcl" pkg="mcl_sa" type="mcl.py" output="screen"/>
+
+</launch>
